@@ -1,0 +1,535 @@
+/*This is the css for the app*/
+
+/*ANCHOR FOR APP*/
+    .anchor_app {
+        display: block;
+        position: absolute;
+        height: 60px;
+        margin-top: -90px;
+    }
+/*APP PROTOTYPE */
+    .appContainer {
+        background-color: #307672;);
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 20px;
+    }
+
+/*LEFT SIDE OF APPCONTAINER*/
+    .infoApp {
+        margin: auto;
+        width: 50%;
+    }
+/*APP HEADER*/
+    .infoApp h1{
+        font-size: 50px;
+        color: white;
+        text-align: center;
+    }
+    .infoApp .info {
+        color: white;
+        font-family: "Titillium Web", sans-serif;
+        text-align: center;
+        margin: 10px;
+    }
+/*APP SLIDES INFORMATION*/
+    .appBoks1{
+        display: flex;
+        align-items: center;
+    }
+
+    .icon {
+        width: 100px;
+        height: 100px;
+        background-image: linear-gradient(white, white);
+        padding: 15px;
+        border-radius: 50%;
+    }
+    .appBoks {
+        padding: 15px;
+        margin: 15px;
+        background-color: rgba(255, 255, 255, 0.95);
+        color: black;
+        width: 100%;
+        height: 20%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        box-shadow: 4px 2px 15px -1px rgba(0,0,0,0.48);
+    }
+
+    .appBoksSelected {
+        padding: 15px;
+        margin: 15px ;
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 100%;
+        height: 20%;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 20px;
+        box-shadow: 4px 2px 15px -1px rgba(0,0,0,0.48);
+    }
+
+    .appBoks h2, .appBoksSelected h2 {
+        color: black;
+        font-size: 20px;
+        font-family: "Titillium Web", sans-serif;
+        letter-spacing: 2px;
+        margin-left: 10px;
+        margin-bottom: 5px;
+    }
+
+    .appBoks p {
+        color: black;
+        font-size: 16px;
+        font-family: "Titillium Web", sans-serif;
+        letter-spacing: 1px;
+        margin-left: 10px;
+    }
+    .appBoksSelected p {
+        color: white;
+        font-size: 16px;
+        font-family: "Titillium Web", sans-serif;
+        letter-spacing: 1px;
+        margin-left: 10px;
+    }
+    .appBoks:hover {
+        background-color: rgba(255, 255, 255, 0.6);
+        color: black;
+        cursor: pointer;
+        border-radius: 5px;
+    }
+
+/*RIGHT SIDE OF APP BOX*/
+    .bildeBoks {
+        align-self: flex-end;
+        margin: 0;
+        padding: 0;
+
+    }
+    .mobil {
+        width: 500px;
+        margin: 0;
+        padding: 0;
+        height: 100%;
+        vertical-align: top;
+    }
+
+    .slidePictures{
+        text-align: center;
+    }
+
+
+/*APP-BOX CSS FOR SMALLER SCREEN*/
+
+    .slidershow {
+        width: 100%;
+        overflow: hidden;
+        display: none;
+        margin-top: 200px;
+        background-image: linear-gradient(white, #e4dfdf);
+    }
+    .middle {
+        position: relative;
+        margin-top: 330px;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+    }
+    .slides {
+         width: 500%;
+         display: flex;
+     }
+
+    .slide {
+        width: 20%;
+        transition: 0.6s;
+    }
+
+    .slide img {
+        width: 100%;
+        height: 100%;
+        opacity: 0.4;
+        z-index: 1;
+    }
+
+    /*TEXT ON IMAGES*/
+    .slideTekst {
+    position: absolute;
+    width: 80%;
+    z-index: 111111;
+    font-size: 36px;
+    color: black;
+    margin-top: -330px;
+    margin-left: 10%;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    text-shadow: 0px 2px 4px rgba(0,0,0,0.11);
+}
+
+/*NAVIGATION BUTTONS*/
+    .navigation {
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        display: flex;
+    }
+
+    .bar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        border: 3px solid #62a1a7;
+        background-color: rgba(255, 255, 255, 0.66);
+        margin: 29px;
+        cursor: pointer;
+    }
+
+    .bar:hover {
+        background: #62a1a7;
+    }
+
+    input[name="r"] {
+        position: absolute;
+        visibility: hidden;
+    }
+
+    #r1:checked ~ .s1 {
+        margin-left: 0;
+    }
+
+    #r2:checked ~ .s1 {
+        margin-left: -20%;
+    }
+
+    #r3:checked ~ .s1 {
+        margin-left: -40%;
+    }
+
+    #r4:checked ~ .s1 {
+        margin-left: -60%;
+    }
+
+    .buttons{
+        text-align: center;
+    }
+
+/*DESCRIPTION OF APP*/
+    .appBobler {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        margin-top: 80px;
+        margin-bottom: 70px;
+        flex-wrap: wrap;
+        font-family: "Titillium Web", sans-serif;
+        border: none;
+        padding-top: 10px;
+    }
+
+    /*ICONS*/
+    .icon2 {
+        display: block;
+        width: 100px;
+        margin: auto;
+        height: 100px;
+    }
+    /*TEXT IN APP*/
+    .appTekst {
+        line-height: 1.5em;
+        margin: 10px;
+        text-align: center;
+    }
+    .appTekst h1 {
+        font-size: 20px;
+        font-family: "Titillium Web", sans-serif;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        margin-top: 20px;
+    }
+
+    .appTekst p {
+        margin-top: 15px;
+        letter-spacing: 1px;
+        font-family: "Titillium Web", sans-serif;
+        color: #122524;
+    }
+
+/*DOWNLOAD THE APP BUTTON*/
+    .downloadLink  {
+        margin: 0 auto;
+        margin-bottom: 100px;
+        margin: 20px 20px 20px 20px auto;
+        font-size: 4vh;
+        width: 500px;
+        border-radius: 5px;
+        border: 3px solid #e57d71;
+        padding: 3px 6px 3px 6px;
+        transition: 0.3s ease-in;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .downloadLink .bilde {
+        margin-bottom: auto;
+        margin-top: auto;
+    }
+
+    .downloadLink a {
+        text-decoration: none;
+        color: #e57d71;
+        font-family: "Titillium Web", sans-serif;
+        transition: 0.3s ease-in;
+        margin-left: 130px;
+    }
+
+    .downloadLink:hover a {
+        color: white;
+        transition: 0.3s ease-out;
+        margin-left: 0%;
+    }
+
+    .downloadLink:hover {
+        background-color: #e57d71;
+        color: white;
+        border-radius: 30px;
+        transition: 0.3s ease-out;
+    }
+
+    .downloadLink img {
+        width: 30px;
+        height: 30px;
+        display: none;
+        transition: 1s ease-in;
+        margin-bottom: auto;
+        margin-top: auto;
+        margin-left: -40px;
+    }
+    .downloadLink:hover img {
+        display: block;
+        transition: 1s ease-in;
+        margin-left: -40px;
+    }
+
+
+
+/*RESPONIVE CSS*/
+@media screen and (max-width: 1000px) {
+    .infoApp {
+        width: 80%;
+    }
+
+    .infoApp .logo {
+        margin: auto;
+        width: 350px;
+        display: block;
+    }
+
+    .mobil {
+        width: 500px;
+    }
+
+}
+
+
+@media screen and (max-width: 770px) {
+    .mobil {
+        display: none;
+    }
+
+    .appBoks {
+        display: none;
+    }
+
+    .infoApp {
+        display: none;
+    }
+
+    .mobil2 {
+        display: block;
+    }
+
+    .slidershow {
+        display: block;
+    }
+    .slidePictures{
+        display: none;
+    }
+
+    .appContainer {
+        height: 400px;
+        display: none;
+    }
+
+    .appBobler {
+        margin-top: -280px;
+    }
+
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 600px){
+    .slideTekst {
+        font-size: 25px;
+        margin-top: -250px;
+    }
+
+    .middle {
+        margin-top: 200px;
+    }
+
+    .appBobler {
+        margin-bottom: 50px;
+        margin-top: -200px;
+    }
+
+    .downloadLink {
+        width: 200px;
+        background-color: #e57d71;
+        color: white;
+        font-size: 23px;
+        border-radius: 30px;
+        transition: 0.3s ease-out;
+        flex-wrap: nowrap;
+    }
+
+    .downloadLink a {
+        color: white;
+        transition: 0.3s ease-out;
+        margin-left: 10%;
+    }
+
+    .downloadLink img {
+        display: block;
+        transition: 1s ease-in;
+        margin-left: -40%;
+        width: 20px;
+        height: 20px;
+    }
+
+    .downloadLink:hover {
+        background-color: #e57d71;
+        color: white;
+        border-radius: 30px;
+        transition: none;
+    }
+
+    .downloadLink:hover img {
+        display: block;
+        transition: none;
+        margin-left: -40px;
+    }
+}
+
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 479px){
+    .slideTekst {
+        font-size: 25px;
+        margin-top: -250px;
+    }
+
+    .bar {
+        margin: 16px;
+    }
+
+    .middle {
+        margin-top: 110px;
+    }
+
+
+    .appBobler {
+        margin-top: -100px;
+        margin-bottom: 50px;
+    }
+
+    .downloadLink {
+        width: 200px;
+        background-color: #e57d71;
+        color: white;
+        font-size: 23px;
+        border-radius: 30px;
+        transition: 0.3s ease-out;
+        flex-wrap: nowrap;
+    }
+
+    .downloadLink a {
+        color: white;
+        transition: 0.3s ease-out;
+        margin-left: 10%;
+    }
+
+    .downloadLink img {
+        display: block;
+        transition: 1s ease-in;
+        margin-left: -40%;
+        width: 20px;
+        height: 20px;
+    }
+}
+
+
+@media only screen and (max-device-width: 768px)
+and (min-device-width: 490px){
+    .downloadLink {
+        width: 400px;
+        background-color: #e57d71;
+        color: white;
+        font-size: 25px;
+        border-radius: 30px;
+        transition: 0.3s ease-out;
+        flex-wrap: nowrap;
+    }
+
+    .downloadLink a {
+        color: white;
+        transition: 0.3s ease-out;
+        margin-left: 10%;
+    }
+
+    .downloadLink img {
+        display: block;
+        transition: 1s ease-in;
+        margin-left: -40%;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+/*IPAD PRO */
+@media only screen and (max-device-width: 1024px)
+and (min-device-width: 769px) {
+    .downloadLink {
+        width: 600px;
+        background-color: #e57d71;
+        color: white;
+        font-size: 30px;
+        border-radius: 30px;
+        transition: 0.3s ease-out;
+        flex-wrap: nowrap;
+    }
+
+    .downloadLink a {
+        color: white;
+        transition: 0.3s ease-out;
+        margin-left: 10%;
+    }
+
+    .downloadLink img {
+        display: block;
+        transition: 1s ease-in;
+        margin-left: -40%;
+        width: 30px;
+        height: 30px;
+    }
+}
+
+

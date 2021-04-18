@@ -1,0 +1,184 @@
+body{background-color: #307672;
+    background-image: linear-gradient(#378e8a, #183034)}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.Logo{
+    margin-top: 10%;
+    height: auto;
+    margin-left: 42%;
+    width: 20%;
+}
+.LastNed{
+    position: relative;
+    font-size: 3vw;
+    font-family: "Titillium Web", sans-serif;
+    text-align: center;
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+.LastNed2{
+    position: relative;
+    padding-top: 2%;
+    font-size: 2vw;
+    font-family: "Titillium Web", sans-serif;
+    letter-spacing: 1px;
+    text-align: center;
+    color: white;
+}
+
+.Download{
+    display: flex;
+    flex-direction: row;
+    margin-left: 25%;
+    margin-top: 3%;
+    margin-bottom: 15%;
+}
+.Download a {
+    width:30%;
+    padding: 1%;
+    margin: 10px;
+
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1200px){
+    .LastNed {
+        font-size: 4vw;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: -5%;
+
+    }
+    .LastNed2{
+        font-size: 3vw;
+        margin: 2%;
+    }
+
+    .Download{
+        width: 100%;
+        margin-left:35%;
+        margin-bottom: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Logo{
+        height: auto;
+        padding: 5%;
+        width: 30%;
+        margin-left: 37.6%;
+        margin-top: 5%;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .LastNed {
+        font-size: 4vw;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: -5%;
+    }
+    .LastNed2{
+        font-size: 3vw;
+        margin-top: 2%;
+    }
+
+    .Download{
+        width: 100%;
+        margin-left:35%;
+        margin-bottom: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Logo{
+        height: auto;
+        padding: 5%;
+        width: 30%;
+        margin-left: 37.6%;
+        margin-top: 5%;
+    }
+    #appLink2 {
+        display: block;
+    }
+
+    #appLink1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 370px) and (max-width: 767px){
+    .LastNed {
+        font-size: 4.5vw;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-top: -4%;
+
+    }
+    .LastNed2{
+        font-size: 3.5vw;
+        margin-top: 3%;
+    }
+
+
+    .Download{
+        width: 150%;
+        margin-left:25%;
+        margin-bottom: 45%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Logo{
+        height: auto;
+        padding: 5%;
+        width: 35%;
+        margin-left: 35%;
+        margin-top: 5%;
+    }
+    #appLink2 {
+        display: block;
+    }
+
+    #appLink1 {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 369px){
+    .LastNed {
+        font-size: 6vw;
+        margin-left: 2%;
+        margin-right: 2%;
+
+    }
+    .LastNed2{
+        font-size: 5vw;
+        margin: 2%;
+    }
+
+
+    .Download{
+        width: 170%;
+        margin-left:22.5%;
+        margin-bottom: 57%;
+        display: flex;
+        flex-direction: column;
+    }
+    .Logo{
+        height: auto;
+        padding: 5%;
+        width: 60%;
+        margin-left: 26%;
+        margin-top: 5%;
+    }
+    #appLink2 {
+        display: block;
+    }
+
+    #appLink1 {
+        display: none;
+    }
+}

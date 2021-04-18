@@ -1,0 +1,193 @@
+
+/*CSS FOR FRONT IMAGE*/
+
+.forside1{ position: relative;
+    width: 100%;
+    display: none;}
+
+.forside1\.1{
+    background-image: url("../Bilder/FORSIDE/forsideUtenTekst.jpg");
+    width: 100%;
+    min-height: 85vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    z-index: -1;
+}
+.Logo666{
+    position: absolute;
+    width: 30vh;
+    height: auto;
+    left: 26%;
+    margin-bottom: 15%;
+    top: 35%;
+    display: block;
+}
+.appenmot {
+    font-family: "Titillium Web", sans-serif;
+    color: white;
+    text-align: left;
+    font-size: calc(5.1px + 1.02vw);
+    left: 16%;
+    display: block;
+    top: 65%;
+    position: absolute;
+    text-shadow: 2px 2px 9px rgba(0,0,0,0.4);
+}
+
+.header{
+    perspective: 1px;
+    transform-style: preserve-3d;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.forside2 {
+    position: relative;
+    width: 100%;
+    display: none;
+}
+
+.forside3 {
+    display:none;
+}
+
+.forside4 {
+    display:none;
+}
+
+.forside5 {
+    display:none;
+}
+
+/*CSS FOR MAKING THE WEBSITE RESPONSIVE FOR PC*/
+@media screen and (max-width: 1050px) {
+
+    .forside1{
+        display: none;
+    }
+
+    .forside1\.1{
+        background-image: url("../Bilder/FORSIDE/forsideForslag-NorskMindre.jpg");
+        min-height: 85vh;
+    }
+    .Logo666{
+        top: 35%;
+    }
+}
+
+/*CSS FOR MAKING THE WEBSITE RESPONSIVE FOR PC*/
+@media only screen and (min-width: 800px) and (max-width: 1049px){
+    .forside1{ display: none;
+    }
+    .forside1\.1{
+        background-image: url("../Bilder/FORSIDE/forsideForslag-NorskMindre.jpg");
+        min-height: 75vh;
+        width: 100%;
+    }
+    .Logo666{
+        top: 30%;
+    }
+
+}
+
+/*CSS FOR MAKING THE WEBSITE RESPONSIVE FOR PC*/
+@media only screen and (min-width: 760px) and (max-width: 799px){
+    .forside1{
+        display: none;
+    }
+    .forside1\.1{
+        background-image: url("../Bilder/FORSIDE/forsideForslag-NorskMindre2.jpg");
+        min-height: 75vh;
+        width: 100%;
+    }
+    .Logo666{
+        top: 30%;
+    }
+
+
+}
+
+/*CSS FOR MAKING THE WEBSITE RESPONSIVE FOR PC*/
+@media only screen and (min-width: 480px) and (max-width: 759px){
+    .forside1\.1{
+        background-image: url("../Bilder/FORSIDE/forsideForslag-NorskMindre2.jpg");
+        min-height: 75vh;
+        width: 100%;
+    }
+    .Logo666{
+        top: 30%;
+    }
+
+}
+
+/*CSS FOR MAKING THE WEBSITE RESPONSIVE FOR IPHONE 4-8*/
+@media only screen and (min-width: 0px) and (max-width: 479px){
+
+    .forside1\.1 {
+        display: none;
+    }
+
+    .forside2 {
+        display: block;
+        width: 100%;
+    }
+    .forside1{
+        display: none;
+    }
+    .Logo666{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+}
+
+/*CSS FOR MAKING THE WEBSITE RESPONSIVE FOR IPAD*/
+@media only screen and (max-device-width: 768px)
+and (min-device-width: 490px){
+    .forside1\.1{
+        display: none;
+    }
+    .forside3{
+        display: block;
+        width: 100%;
+    }
+    .forside1{
+        display: none;
+    }
+    .Logo666{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+}
+
+/*CSS FOR MAKING THE WEBSITE RESPONSIVE FOR IPAD PRO */
+@media only screen and (max-device-width: 1024px)
+and (min-device-width: 769px) {
+
+    .forside1\.1{
+        display: none;
+    }
+    .forside3{
+        display: block;
+        width: 100%;
+    }
+    .forside1{
+        display: none;
+    }
+
+    .Logo666{
+        display: none;
+    }
+    .header{
+        display: none;
+    }
+}
+

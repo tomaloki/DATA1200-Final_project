@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8d309c5d-593b-44e2-8740-3b5b798ebf41" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
+  <component name="ProjectId" id="1TBuO4IpxdlJunhvAKariKPwdhe" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="JavaScript.Libraries" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="index.html" type="JavascriptDebugType" temporary="true" nameIsGenerated="true" uri="http://localhost:63343/Final Project Web/Final Project HTML/src/index.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.index.html" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8d309c5d-593b-44e2-8740-3b5b798ebf41" name="Default Changelist" comment="" />
+      <created>1572945774095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1572945774095</updated>
+      <workItem from="1572945775380" duration="11567000" />
+      <workItem from="1572958295110" duration="8182000" />
+      <workItem from="1572974768069" duration="790000" />
+      <workItem from="1573040407601" duration="5082000" />
+      <workItem from="1573049967436" duration="2416000" />
+      <workItem from="1573069638766" duration="608000" />
+      <workItem from="1573114501658" duration="628000" />
+      <workItem from="1573550114901" duration="8777000" />
+      <workItem from="1573560975816" duration="3414000" />
+      <workItem from="1573564903944" duration="1199000" />
+      <workItem from="1573645720881" duration="10895000" />
+      <workItem from="1573716753665" duration="95000" />
+      <workItem from="1573721246883" duration="7488000" />
+      <workItem from="1573728868149" duration="649000" />
+      <workItem from="1573729608302" duration="7832000" />
+      <workItem from="1573740741713" duration="1215000" />
+      <workItem from="1573805347392" duration="601000" />
+      <workItem from="1574083630518" duration="9302000" />
+      <workItem from="1574101285410" duration="732000" />
+      <workItem from="1574148832744" duration="103000" />
+      <workItem from="1574162570613" duration="9158000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>

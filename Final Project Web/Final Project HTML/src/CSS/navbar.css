@@ -1,0 +1,348 @@
+/*GENERALLY FOR THE WHOLE PAGE*/
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    html{
+        scroll-behavior: smooth;
+    }
+
+    html, body {
+        overflow-x: hidden ;
+    }
+
+    body {
+        margin: 0px;
+        width: 100%;
+        margin-top: 20px;
+        font-family: "Titillium Web", sans-serif;
+
+    }
+
+
+/*CSS FOR THE TOP NAVBAR*/
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        font-family: "Barlow", sans-serif;
+        letter-spacing: 1px;
+        font-weight: lighter;
+        align-items: center;
+        min-height: 8vh;
+        background-color: white;
+        padding: 0px;
+        position: -webkit-sticky;
+        top:0;
+        width: 100%;
+        position: fixed;
+        z-index: 1111;
+        height: 100px;
+        box-shadow: 0px -4px 10px 5px rgba(0,0,0,0.11);
+    }
+
+    #logo2 {
+        width: 200px;
+        margin-left: 20px;
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-around;
+        width: 70%;
+        margin-top: 45px;
+        margin-left: 100px;
+        border-top: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+    }
+
+    .nav-links li {
+        list-style: none;
+    }
+
+    .nav-links a {
+        color: #444444;
+        text-decoration: none;
+        //font-width: bold;
+        font-size: 16px;
+        transition: 0.3s ease-in;
+        border-top: 1px solid white;
+        border-bottom: 1px solid white;
+        padding: 10px 0 10px 0;
+        //margin: 8px 0;
+
+    }
+    #flagg{
+        padding-top: 5px;
+    }
+
+    .flagg{
+        width: 32px;
+        height: 32px;
+        margin-right: 10px;
+    }
+
+    .nav-links .linker:hover {
+        //transition: 0.4s ease-out;
+        border-top: 1px solid #378e8a;
+        border-bottom: 1px solid #378e8a;
+        padding: 10px 0px 10px 0px;
+        margin: 8px 0;
+    }
+
+
+    .download {
+        margin-top: 20px;
+        background-color: #538e93;
+        border-radius: 5px;
+        padding: 10px;
+        color: white;
+    }
+
+    .download:hover {
+        opacity: 0.85;
+    }
+
+    #språkKnapp {
+        padding-left: 10px;
+        font-size: 14px;
+    }
+    #språkKnapp:hover{
+        border-bottom: 1px solid #333333;
+    }
+    .språk{
+        display: flex;
+        align-items: flex-start;
+        border-left: 1px solid #333333;
+        padding-left: 20px;
+        padding-bottom: 0;
+        padding-top: 10px;
+        margin-top: -20px;
+    }
+    .nav-links .download {
+        color: white;
+        font-size: 17.5px;
+        border-top: transparent;
+        border-bottom: transparent;
+        transition: none;
+        padding: 15px 10px 15px 10px;
+
+
+    }
+
+    .download:hover a li{
+        border-top: 10px #62a1a7;
+        border-bottom: 10px #62a1a7;
+        transition: none;
+        padding: 15px 5px;
+    }
+
+/*POPUP WITH TEXT-SIZE INFO IN NAVBAR */
+
+    .tekststørrelse:first-letter{
+        font-size: 12px;
+    }
+
+    .tekststørrelse span{
+        font-size: 20px;
+    }
+
+    .tekst_popup{
+        visibility: hidden;
+        font-size: 20px;
+        width: 780px;
+        background-color: #393e46;
+        color: white;
+        text-align: center;
+        border-radius: 6px;
+        padding: 10px 0;
+        position: absolute;
+        top: 100%;
+        right: 0;
+    }
+
+    .tekststørrelse:hover .tekst_popup {
+        visibility: visible;
+    }
+
+/*CSS FOR HIDDEN MENU, MUST BE CLICKED TO BE VISIBLE*/
+
+    #menu a {
+        text-decoration: none;
+        color: #232323;
+        transition: color 0.3s ease;
+    }
+
+    #menu a:hover {
+        opacity: 0.8;
+    }
+
+    #menuToggle {
+        display: none;
+        position: absolute;
+        top: 50px;
+        right: 50px;
+        z-index: 1;
+        -webkit-user-select: none;
+        user-select: none;
+    }
+
+    #menuToggle input {
+        display: block;
+        width: 40px;
+        height: 32px;
+        position: absolute;
+        top: -7px;
+        left: -5px;
+        cursor: pointer;
+        opacity: 0;
+        z-index: 2;
+        -webkit-touch-callout: none;
+    }
+
+    #menuToggle span {
+        display: block;
+        width: 33px;
+        height: 4px;
+        margin-bottom: 5px;
+        position: relative;
+        background: #62a1a7;
+        border-radius: 3px;
+        z-index: 1;
+        transform-origin: 4px 0px;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+        opacity 0.55s ease;
+    }
+
+    #menuToggle span:first-child {
+        transform-origin: 0% 0%;
+    }
+
+    #menuToggle span:nth-last-child(2) {
+        transform-origin: 0% 100%;
+    }
+
+    #menuToggle input:checked ~ span {
+        opacity: 1;
+        transform: rotate(45deg) translate(-2px, -1px);
+        background: #232323;
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(3) {
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+
+    #menuToggle input:checked ~ span:nth-last-child(2) {
+        opacity: 1;
+        transform: rotate(-45deg) translate(0, -1px);
+    }
+
+    #menu {
+        position: absolute;
+        width: 300px;
+        margin: -100px 0 0 0;
+        padding: 50px;
+        padding-top: 125px;
+        right: -100px;
+        height: 120vh;
+        background: white;
+        list-style-type: none;
+        -webkit-font-smoothing: antialiased;
+        /* to stop flickering of text in safari */
+        transform-origin: 0% 0%;
+        transform: translate(100%, 0);
+
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        box-shadow: 0px -4px 10px 5px rgba(0,0,0,0.11);
+    }
+
+    #menu li {
+        padding: 10px 0;
+        font-size: 17px;
+        margin-bottom: 24px;
+    }
+
+    #menuToggle input:checked ~ ul {
+        transform: scale(1.0, 1.0);
+        opacity: 1;
+    }
+
+
+    .anchor {
+        display: block;
+        position: absolute;
+        height: 150px;
+        margin-top: -150px;
+        -ms-transform: skewY(-4deg);
+        -webkit-transform: skewY(-4deg);
+    }
+
+    .anchorTop {
+        display: block;
+        position: absolute;
+        height: 0;
+        margin-top: -730px;
+    }
+
+/*CSS FOR MAKING THE WEBSITE RESPONSIVE FOR PC*/
+@media screen and (max-width: 1050px) {
+    body {
+        margin: 0px;
+        width: 100%;
+        margin-top: 100px;
+    }
+
+    nav {
+        justify-content: space-between;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    #menuToggle {
+        display: block;
+    }
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        padding: 0px;
+    }
+
+
+    #logo2 {
+        margin-left: 20px;
+    }
+
+    #språkKnapp {
+        font-size: 17px;
+        padding-left: 0;
+        padding-top: 20px;
+    }
+
+    #menu .språk {
+        border-left: none;
+        margin-left: -10px;
+        border-top: 5px none;
+        margin-top: 20px;
+    }
+
+    #menu .download {
+        margin-right: 0px;
+        margin-left: 0px;
+        font-size: 20px;
+        margin-top: 20px;
+        color: #ffffff;
+    }
+
+    #menu .språk #språkKnapp1 {
+        margin-top: 10px;
+    }
+}
+

@@ -1,0 +1,194 @@
+body{
+    background-image: linear-gradient(white,white,#cfd8c6);
+    background-color: #e4eddb;
+    padding-bottom: 0;
+}
+
+/*COMPANY-TEXT*/
+.selskapTekst{
+    font-family: "Titillium Web", sans-serif;
+    text-align: justify;
+    font-size: 18px;
+}
+
+.sources{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: "Titillium Web", serif;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+}
+/*HEADLINE*/
+.companyContainer h1 {
+    text-align: center;
+    padding-top: 100px;
+    color: #396362;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Titillium Web", sans-serif;
+    margin: 10px 0px 10px 0px;
+
+}
+
+/*PICTURE OF THE WHOLE TEAM*/
+.team {
+    text-align: center;
+    margin: 10px;
+}
+
+.teamPic {
+    text-align: center;
+    display: block;
+    width: 250px;
+    margin: auto;
+
+}
+
+/*THE TEXT ABOUT THE COMPANY - PARAGRAPH*/
+
+.companyContainer p {
+    width: 45%;
+    margin: auto;
+    padding-bottom: 120px;
+}
+
+.companyContainer p {
+    line-height: 1.7em;
+}
+
+
+
+/*HEADLINE AND PARAGRAPH FOR TEXT OVER TEAM-BUBBLES*/
+
+.teamContainer h1 {
+    text-align: center;
+    padding-top: 0px;
+    color: #396362;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: "Titillium Web", sans-serif;
+    margin: 20px 0px 20px 0px;
+
+}
+
+.teamContainer p1{
+    width: 100%;
+    margin: auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    font-family: "Titillium Web", sans-serif;
+    font-size: 12px;
+    align-content: center;
+    color: #396362;
+}
+
+.teamContainer p {
+    width: 45%;
+    margin: auto;
+    padding-top: 10px;
+    font-size: 18px;
+    padding-bottom: 10px;
+    text-align: center;
+    font-family: "Titillium Web", sans-serif;
+    align-content: center;
+    color: #396362;
+}
+
+/*PICTURES OF THE TEAM*/
+.teamBobler{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+    margin: auto;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: "Titillium Web", sans-serif;
+}
+.wholeteam {
+    text-align: center;
+    margin: 5px;
+}
+
+.wholeteampic {
+    text-align: center;
+    display: block;
+    width: 100px;
+    margin: auto;
+}
+
+/*TEXT ABOUT EACH INDIVIDUAL (UNDER TEAM-BUBBLES) */
+.infoTeam h1 {
+    font-size: 10px;
+    font-family: "Titillium Web", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+
+.infoTeam p {
+    font-size: 12px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    text-align: justify;
+}
+
+
+
+/*CODE FOR MOBILE ETC*/
+@media screen and (min-width: 851px) {
+    .wholeteam{
+        width: 10%;
+    margin: 30px    }
+    .wholeteampic{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 850px) {
+    .tekst{
+        margin-top: 12%;}
+
+    .wholeteam .wholeteampic{
+     display: flex;
+      flex-wrap: wrap;
+        margin: 50px
+    }
+    .selskapTekst p{
+        width: 80%;
+        text-align: left;
+        align-content: center;
+
+    }
+    .teamContainer p{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    #appLink2 {
+        display: block;
+    }
+
+    #appLink1 {
+        display: none;
+    }
+}
+
+#menu-toggle {
+    display: none;
+}
+
+#collapse-menu {
+    transition: transform 0.3s;
+    transform-origin: top;
+}
+
+input:not(:checked) ~ #collapse-menu {
+    transform: scaleY(0);
+}

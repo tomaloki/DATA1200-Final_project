@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+/* PROBLEM PARAGRAPH */
+    .problemContainer {
+        background-color: #307672;
+        color: white;
+        min-height: 500px;
+        width: 100%;
+        margin: 0;
+        padding: 20px;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 18px;
+        transform: skewY(4deg);
+        -ms-transform: skewY(4deg);
+        -webkit-transform: skewY(4deg);
+    }
+
+
+    .problemContainer h1 {
+        color: #ffffff;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        font-family: 'Barlow', sans-serif;
+        margin: 10px 0px 10px 0px;
+
+    }
+
+    .problemContainer .tekst {
+        width: 70%;
+        margin: auto;
+        margin-bottom: 100px;
+        transform: skewY(-4deg);
+        -ms-transform: skewY(-4deg);
+        -webkit-transform: skewY(-4deg);
+        text-align: justify;
+    }
+
+    .problemContainer p {
+        line-height: 1.7em;
+    }
+
+/* SCROLLING - ANCHOR FOR THE PROBLEM PARAGRAPH */
+    .anchor1 {
+        display: block;
+        position: absolute;
+        height: 90px;
+        margin-top: -160px;
+    }
+
+/*PICTURES FOR THE PROBLEM - PARAGRAPH */
+    .undersøkelser {
+        place-content: center;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 60px;
+        width: 130%;
+        margin-left: -15%;
+        justify-content: space-around;
+    }
+
+    .undersøkelse1 {
+        width: 750px;
+        border-radius: 2%;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .undersøkelseBilde1 {
+        width: 100%;
+        opacity: 0.9;
+        border-radius: 2%;
+        //border-bottom-left-radius: 10px;
+        //border-top-right-radius: 10px;
+    }
+
+
+    .undersøkelse2{
+        width: 400px;
+        border-radius: 2%;
+        margin-top: 20px;
+    }
+
+    .undersøkelseBilde2 {
+        width: 380px;
+        opacity: 0.9;
+        border-radius: 2%;
+        //border-bottom-right-radius: 10px;
+        //border-top-left-radius: 10px;
+
+    }
+
+/*LINKS UNDER THE PICTURES IN THE PROBLEM-PARAGRAPH*/
+    .undersøkelser a {
+        background-color: #307672;
+        color: white;
+        width: 100%;
+        font-family: 'Titillium Web', sans-serif;
+        font-size: 15px;
+        text-decoration: underline;
+    }
+
+    .undersøkelser a:hover {
+        transition: 0.5s ease-in;
+        text-decoration: underline;
+    }
+
+
+
+/*MAKING THE PICTURES RESPONSIVE*/
+@media screen and (max-width: 1301px) {
+    .undersøkelse2 {
+        text-align: center;
+    }
+    .undersøkelseBilde2 {
+        display: block;
+        margin: auto;
+        width: 100%;
+    }
+}
+
+/*CODE FOR SMALLER SCREEN FOR PC*/
+    @media screen and (max-width: 850px) {
+        .undersøkelse1 {
+            width: 80%;
+        }
+    }
+
+@media screen and (max-width: 1134px) {
+    .undersøkelser {
+        margin-top: 20px;
+        margin-bottom: 60px;
+    }
+}
+
+/*CODE FOR SMALLER SCREEN FOR PC*/
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .problemContainer .tekst {
+        width: 100%;
+    }
+
+    .tekst h1{
+        text-align: center;
+    }
+    .tekst p{
+        width: 90%;
+        text-align: left;
+        margin-left: 7%;
+    }
+
+    .undersøkelser {
+        width: 110%;
+        margin-left: -5%;
+    }
+
+    .undersøkelse2 {
+        width: 60%;
+    }
+}
+
+/*CODE FOR SMALLER SCREEN FOR PC*/
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .problemContainer .tekst {
+        width: 100%;
+    }
+
+    .tekst h1{
+        text-align: center;
+    }
+    .tekst p{
+        width: 90%;
+        text-align: left;
+        margin-left: 7%;
+    }
+
+    .undersøkelser {
+        width: 110%;
+        margin-left: -5%;
+    }
+
+    .undersøkelse2 {
+        width: 80%;
+    }
+}
+
+/*CODE FOR IPHONE*/
+@media only screen and (min-width: 0px) and (max-width: 479px){
+    .problemContainer .tekst {
+        width: 100%;
+    }
+
+    .tekst h1{
+        text-align: center;
+    }
+    .tekst p{
+        width: 90%;
+        text-align: left;
+        margin-left: 7%;
+    }
+
+    .undersøkelser {
+        width: 110%;
+        margin-left: -5%;
+    }
+
+    .undersøkelse2 {
+        width: 80%;
+    }
+}
+
+

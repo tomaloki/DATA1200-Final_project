@@ -1,0 +1,150 @@
+/*BOTBAR CSS*/
+
+.botbar{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5%;
+    padding-bottom: 2%;
+    background-color: #2e2e2e;
+    font-weight: 100;
+    line-height: 1.5;
+    font-family: 'Barlow', sans-serif;
+    color: white;
+}
+
+/*GO TO THE TOP BUTTON*/
+.toTop{
+    color: #47b8b2;
+    font-size: 30px;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+.toTop:hover{
+    border-bottom: solid 2px #307672;
+}
+/*BULLET LIST BOTBAR*/
+.Links li{
+    color: #47b8b2;
+}
+.Links a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+}
+.Links a:hover{
+    border-bottom: solid 2px #307672;
+}
+
+/*LOGO WITH LINK TO MAIN PAGE*/
+.appBild{
+    width: 200px;
+    height: 200px;
+    opacity: 0.8;
+}
+/*ALT ATTRIBUTE CONTRAST COLOR*/
+.fargelink{
+    color: white;
+}
+
+/*IMAGE-LINKS TO DOWNLOAD */
+.botbarbilde{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.botbarbilde a{
+    color: white;
+}
+.botbarbilde img {
+    width: 201px;
+    height: 67px;
+    margin-top: 10px;
+}
+
+
+
+@media screen and (max-width: 1000px){
+
+    .botbar{
+        flex-direction: column;
+        justify-content: initial;
+        align-items: center;
+    }
+    .Links{
+        margin-top: 2%;
+        text-align: left;
+        width: 120%;
+    }
+    .Links li{
+        width: 100%;
+    }
+    .Links a{
+        padding: 0 2%;
+        place-self: center;
+        font-size: 30px;
+
+    }
+
+    .botbarbilde{
+        margin-top: 2%;
+        margin-left: 3%;
+    }
+
+}
+
+@media screen and (max-width: 500px){
+    .Links a{
+        font-size: 20px;
+    }
+
+}
+
+@media only screen
+and (min-device-width : 375px)
+and (max-device-width : 812px)
+and (-webkit-device-pixel-ratio : 3) {
+    .botbar {
+        margin-top: 0px;
+    }
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1199px){
+    .botbar {
+        margin-top: 0px;
+    }
+    .Links a{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    .botbar {
+        margin-top: 0px;
+    }
+    .Links a{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+    .botbar {
+        margin-top: 0px;
+    }
+    .Links a{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 479px){
+    .botbar {
+        margin-top: 0px;
+    }
+    .Links a{
+        font-size: 15px;
+    }
+}
